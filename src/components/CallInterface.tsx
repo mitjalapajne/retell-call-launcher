@@ -15,7 +15,7 @@ const CallInterface = () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${process.env.RETELL_API_KEY}`
+          'Authorization': `Bearer ${import.meta.env.VITE_RETELL_API_KEY}`
         },
         body: JSON.stringify({
           agentId: 'your-agent-id' // Replace with actual agent ID
@@ -49,7 +49,7 @@ const CallInterface = () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${process.env.RETELL_API_KEY}`
+          'Authorization': `Bearer ${import.meta.env.VITE_RETELL_API_KEY}`
         }
       });
 
